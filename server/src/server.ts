@@ -1,10 +1,15 @@
 import express from 'express'
+import userRouter from './routes/user'
 
 const app = express()
+
+app.use(express.json())
 
 app.get('/', async (_req, res) => {
   res.send('Test')
 })
+
+app.use('/api/users', userRouter)
 
 const port = process.env.PORT || 5000
 app.listen(port, () => {

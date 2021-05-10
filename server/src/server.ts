@@ -1,5 +1,6 @@
 import express from 'express'
 import userRouter from './routes/user'
+import productRouter from './routes/product'
 
 const app = express()
 
@@ -10,6 +11,7 @@ app.get('/', async (_req, res) => {
 })
 
 app.use('/api/users', userRouter)
+app.use('/api/products', productRouter)
 
 const port = process.env.PORT || 5000
 app.listen(port, () => {

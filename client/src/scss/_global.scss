@@ -1,0 +1,59 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--color-light);
+  min-height: 100vh;
+}
+
+main {
+  padding: 4rem 2rem;
+
+  @media (min-width: 756px) {
+    padding: 8rem 6rem;
+  }
+}
+
+section {
+  max-width: 80ch;
+}
+
+li {
+  list-style-type: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  border: none;
+  border-radius: 0.05em;
+  padding: 0.5em 1.5em;
+  background: var(--color-primary);
+  color: var(--color-light);
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: red;
+  }
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 45ch;
+}
+
+input[type='text'],
+input[type='email'],
+input[type='password'] {
+  padding: 0.5rem 1.5rem;
+}

@@ -1,0 +1,23 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 2rem;
+  background: var(--color-dark);
+  color: var(--color-light);
+
+  .links {
+    display: flex;
+  }
+
+  .link {
+    padding: 0 0.5rem;
+    letter-spacing: 0.05em;
+  }
+
+  .logo {
+    font-weight: var(--font-weight-bold);
+    font-size: 1.5rem;
+    letter-spacing: 0.07em;
+  }
+}
